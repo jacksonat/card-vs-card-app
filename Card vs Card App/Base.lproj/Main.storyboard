@@ -83,6 +83,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="1ze-kb-4Ow" id="v1e-cF-qzg"/>
+                        <outlet property="firstCardImageView" destination="NjB-q7-whV" id="elw-Km-piK"/>
+                        <outlet property="playRoundButton" destination="T71-Qp-gaZ" id="zct-h0-Zkg"/>
+                        <outlet property="secondCardImageView" destination="qEd-1l-AMl" id="mbq-po-ydc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
