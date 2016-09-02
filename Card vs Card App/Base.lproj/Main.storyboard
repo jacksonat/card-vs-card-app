@@ -25,27 +25,45 @@
                                     <constraint firstAttribute="width" constant="120" id="KmP-tI-B5X"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qEd-1l-AMl" userLabel="SecondCard">
+                                <rect key="frame" x="390" y="215" width="120" height="170"/>
+                                <color key="backgroundColor" red="0.1647058874" green="0.98039221759999995" blue="0.50196081400000003" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="PNH-gh-UyS"/>
+                                    <constraint firstAttribute="height" constant="170" id="aRk-9I-CG1"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="390" y="115" width="120" height="170"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NjB-q7-whV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6kA-fT-nrk"/>
                             <constraint firstItem="NjB-q7-whV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="DF0-fT-aml"/>
                             <constraint firstItem="NjB-q7-whV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="IFQ-mC-jvu"/>
+                            <constraint firstAttribute="trailing" secondItem="qEd-1l-AMl" secondAttribute="trailing" constant="50" id="Yci-1Q-zHR"/>
+                            <constraint firstAttribute="trailing" secondItem="qEd-1l-AMl" secondAttribute="trailing" constant="150" id="rmH-9e-wr3"/>
+                            <constraint firstItem="qEd-1l-AMl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vln-Ok-Upy"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="DF0-fT-aml"/>
                                 <exclude reference="IFQ-mC-jvu"/>
+                                <exclude reference="Yci-1Q-zHR"/>
+                                <exclude reference="rmH-9e-wr3"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <include reference="IFQ-mC-jvu"/>
+                                <include reference="rmH-9e-wr3"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="DF0-fT-aml"/>
+                                <include reference="Yci-1Q-zHR"/>
                             </mask>
                         </variation>
                     </view>
