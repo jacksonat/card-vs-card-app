@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.playRoundButton.setTitle("Play", forState: UIControlState.Normal)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +31,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func playRoundTapped(sender: UIButton) {
+    
+        
+    
+    }
 
 }
 
