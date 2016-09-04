@@ -52,6 +52,21 @@ class ViewController: UIViewController {
         
         // Set the second card image view to the asset corresponding to the random number
         self.secondCardImageView.image = UIImage(named: secondCardString)
+        
+        // Determine the higher card
+        if firstRandomNumber > secondRandomNumber {
+        
+            // TODO: first card is larger
+        
+        } else if firstRandomNumber == secondRandomNumber {
+            
+            // TODO: numbers are equal
+        
+        } else {
+        
+            // TODO: second card is larger
+        
+        }
     
     }
 
