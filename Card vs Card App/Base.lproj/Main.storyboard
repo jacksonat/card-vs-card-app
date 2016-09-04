@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1ze-kb-4Ow" userLabel="Background">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="1ze-kb-4Ow" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="NjB-q7-whV" userLabel="FirstCard">
@@ -37,32 +37,44 @@
                                     <rect key="frame" x="390" y="115" width="120" height="170"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T71-Qp-gaZ">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T71-Qp-gaZ">
                                 <rect key="frame" x="284.5" y="0.0" width="31" height="30"/>
-                                <state key="normal" title="Deal"/>
+                                <state key="normal" image="dealbutton"/>
                                 <connections>
                                     <action selector="playRoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qio-Te-Dvo"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rBq-bj-bDh" userLabel="Logo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rBq-bj-bDh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1FL-KZ-dYF"/>
                             <constraint firstItem="NjB-q7-whV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6kA-fT-nrk"/>
                             <constraint firstItem="NjB-q7-whV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="DF0-fT-aml"/>
                             <constraint firstAttribute="bottom" secondItem="T71-Qp-gaZ" secondAttribute="bottom" constant="150" id="HHb-5X-hdY"/>
                             <constraint firstItem="NjB-q7-whV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="IFQ-mC-jvu"/>
+                            <constraint firstItem="rBq-bj-bDh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="80" id="P6f-tQ-zxw"/>
                             <constraint firstItem="1ze-kb-4Ow" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q6G-RX-8kY"/>
+                            <constraint firstItem="rBq-bj-bDh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="VFG-GU-GmL"/>
                             <constraint firstAttribute="trailing" secondItem="qEd-1l-AMl" secondAttribute="trailing" constant="50" id="Yci-1Q-zHR"/>
                             <constraint firstAttribute="bottom" secondItem="1ze-kb-4Ow" secondAttribute="bottom" id="aM9-6E-E7q"/>
                             <constraint firstItem="T71-Qp-gaZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ePX-04-0sT"/>
                             <constraint firstItem="1ze-kb-4Ow" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f0Z-g0-JBi"/>
+                            <constraint firstAttribute="trailing" secondItem="rBq-bj-bDh" secondAttribute="trailing" constant="80" id="kYk-ba-9lq"/>
                             <constraint firstAttribute="bottom" secondItem="T71-Qp-gaZ" secondAttribute="bottom" constant="50" id="oak-lf-aCZ"/>
+                            <constraint firstItem="rBq-bj-bDh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="p3B-zM-PhP"/>
                             <constraint firstAttribute="trailing" secondItem="qEd-1l-AMl" secondAttribute="trailing" constant="150" id="rmH-9e-wr3"/>
                             <constraint firstItem="qEd-1l-AMl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vln-Ok-Upy"/>
                             <constraint firstAttribute="trailing" secondItem="1ze-kb-4Ow" secondAttribute="trailing" id="yRI-ho-lhN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="P6f-tQ-zxw"/>
+                                <exclude reference="VFG-GU-GmL"/>
+                                <exclude reference="kYk-ba-9lq"/>
+                                <exclude reference="p3B-zM-PhP"/>
                                 <exclude reference="DF0-fT-aml"/>
                                 <exclude reference="IFQ-mC-jvu"/>
                                 <exclude reference="Yci-1Q-zHR"/>
@@ -73,13 +85,20 @@
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
+                                <include reference="p3B-zM-PhP"/>
                                 <include reference="IFQ-mC-jvu"/>
                                 <include reference="rmH-9e-wr3"/>
                                 <include reference="oak-lf-aCZ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="rBq-bj-bDh"/>
+                            </mask>
                             <mask key="constraints">
+                                <include reference="P6f-tQ-zxw"/>
+                                <include reference="VFG-GU-GmL"/>
+                                <include reference="kYk-ba-9lq"/>
                                 <include reference="DF0-fT-aml"/>
                                 <include reference="Yci-1Q-zHR"/>
                                 <include reference="HHb-5X-hdY"/>
@@ -100,6 +119,8 @@
     </scenes>
     <resources>
         <image name="back" width="120" height="170"/>
-        <image name="background" width="667" height="622"/>
+        <image name="dealbutton" width="82" height="31"/>
+        <image name="logo" width="122" height="67"/>
+        <image name="newbackground" width="667" height="622"/>
     </resources>
 </document>
